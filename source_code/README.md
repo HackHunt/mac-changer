@@ -1,11 +1,10 @@
-## Source Code
+# Source Code
 
 Source code for the mac_changer.
 
-#### Programming Language:
-Python 3.8
+### Programming Language: Python 3.8
 
-#### Libraries Used:
+### Libraries Used:
 - **subprocess:** The *subprocess* module allows you to spawn new processes, connect to their
 input/output/error pipes, and obtain their return codes. Used to interact with command line
 arguments.
