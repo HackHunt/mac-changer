@@ -1,25 +1,25 @@
-## MAC Changer 
+# MAC Changer 
 
-#### Media Access Control Address (MAC Address):
+### Media Access Control Address (MAC Address):
  - Permanent
  - Physical
  - Unique
  - Assigned by manufacturer
 
-#### Why to change the MAC address?
+### Why to change the MAC address?
 - Increase anonymity
 - Impersonate other devices
 - Bypass filters
 
-#### Supports Platform: Linux, Debain
+### Supports Platform: Linux, Debain
 
-#### How to use:
+### How to use:
 - Convert the file into executable.
     > **chmod u+x mac_changer**
 - Run the Executable.
     > **./mac_changer** 
 
-#### Available Arguments:
+### Available Arguments:
 - **-h or --help:** *Displays all the available options.*
 - **-i or --interface**: *This option needs to be used as to 
 define for which interface you want to change the MAC address.*
@@ -30,15 +30,15 @@ define for which interface you want to change the MAC address.*
     *Random MAC Address Generation Algorithm*. 
     - **Random MAC Address Generation Algorithm** will always generate a unicast mac address.
 
-#### Color:
+### Color:
 - **Green:** Successful.
 - **Yellow:** In process.
 - **White:** MAC Address.
 - **Red:** Unsuccessful or Errors. 
 
-#### Licensed: GNU General Public License, version 3
+### Licensed: GNU General Public License, version 3
 
-#### Developer Information:
+### Developer Information:
 - **Website:** [Hack Hunt](https://hack-hunt.blogspot.com/)
 - **Contact:** hh.hackunt@gmail.com
 - **Youtube:** [Hack Hunt](https://youtube.com/hackhunt) 
