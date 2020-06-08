@@ -11,8 +11,7 @@
 - Impersonate other devices
 - Bypass filters
 
-#### Supports Platform:
-Linux, Debain
+#### Supports Platform: Linux, Debain
 
 #### How to use:
 - Convert the file into executable.
