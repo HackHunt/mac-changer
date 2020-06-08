@@ -43,5 +43,5 @@ define for which interface you want to change the MAC address.*
 - **Contact:** hh.hackunt@gmail.com
 - **Youtube:** [Hack Hunt](https://youtube.com/hackhunt) 
 - **Instagram:** [hh.hackhunt](https://www.instagram.com/hh.hackhunt/)
-- **Facebook:** [Hack Hunt](https://www.facebook.com/hh.hackhunt/)
-- **Twitter:** [Hack Hunt](https://twitter.com/hh_hackhunt/)
+- **Facebook:** [hh.hackhunt](https://www.facebook.com/hh.hackhunt/)
+- **Twitter:** [hh_hackhunt](https://twitter.com/hh_hackhunt/)
