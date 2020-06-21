@@ -9,17 +9,17 @@ from termcolor import colored
 
 def mac_change(interface, mac):
     print(colored("[+] Changing interface (" + interface + ") to down state", 'yellow'))
-    subprocess.call(["ifconfig", interface, "down"])
+    subprocess.call(["sudo","ifconfig", interface, "down"])
 
     print(colored("[+] Changing MAC Address for " + interface + " to " + colored(mac, 'white'), 'yellow'))
-    subprocess.call(["ifconfig", interface, "hw", "ether", mac])
+    subprocess.call(["sudo","ifconfig", interface, "hw", "ether", mac])
 
     print(colored("[+] Changing interface (" + interface + ") to up state\n", 'yellow'))
-    subprocess.call(["ifconfig", interface, "up"])
+    subprocess.call(["sudo","ifconfig", interface, "up"])
 
 
 def get_current_mac(interface):
-    result = subprocess.check_output(["ifconfig", interface])
+    result = subprocess.check_output(["sudo","ifconfig", interface])
     mac_add = re.search("\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(result))
 
     if mac_add:
@@ -61,7 +61,7 @@ def get_cmd_line_arguments():
     parser = argparse.ArgumentParser(prog="MAC Changer",
                                      usage="%(prog)s [options]\n\t[-i | --interface] interface_name\n\t[-m | --mac] mac_address",
                                      formatter_class=argparse.RawDescriptionHelpFormatter,
-                                     description=""">>> | MAC Changer v1.0 by Hack Hunt | <<<
+                                     description=""">>> | MAC Changer v1.1 by Hack Hunt | <<<
     ---------------------------------""",
                                      epilog="*** If -m or --mac is not specified MAC will be generated randomly")
 
@@ -88,7 +88,7 @@ def main():
     mac = args.mac
 
     try:
-        subprocess.check_call(['ifconfig', interface], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.check_call(['sudo','ifconfig', interface], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except subprocess.CalledProcessError:
         print(colored("\n[-] Error! Interface (" + interface + ") not found!\n", 'red'))
         sys.exit()
@@ -106,7 +106,7 @@ def main():
         else:
             print(colored("\n[-] Please enter a valid MAC Address\n", 'red'))
     else:
-        print(original_mac)
+        print(colored("\n[-] MAC Address not found for the Interface (" + interface + ").\n", 'red'))
 
 
 main()

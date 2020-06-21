@@ -14,7 +14,12 @@
 ### Supports Platform: Linux, Debain
 
 ### How to use:
-- Convert the file into executable.
+- Convert the setup.sh into executable
+	> **chmod 755 setup.sh**
+- Run setup.sh
+	> **./setup.sh**
+
+- Convert the mac_changer into executable.
     > **chmod u+x mac_changer**
 - Run the Executable.
     > **./mac_changer** 
